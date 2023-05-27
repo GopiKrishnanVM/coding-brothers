@@ -1,6 +1,9 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import "focus-visible";
+
 import Head from "next/head";
+import { Footer } from "@/components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
@@ -11,7 +14,10 @@ export const metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" className="h-full">
-      <body className={`${inter.className} h-full`}>{children}</body>
+      <body className={`${inter.className} h-full`}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 };

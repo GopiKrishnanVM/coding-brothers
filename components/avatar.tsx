@@ -1,7 +1,7 @@
 import Link from "next/link";
 import NextImage from "next/image";
 import clsx from "clsx";
-import avatarImage from "@/images/avatar.jpg";
+import avatarImage from "@/Images/avatar.jpg";
 
 interface Prop {
   className?: String;

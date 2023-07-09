@@ -5,7 +5,6 @@ import "focus-visible";
 import HeaderComponent from "@/components/header";
 import Footer from "@/components/footer";
 import { Metadata } from "next/types";
-import headerLogo from "@/Images/Logo.jpeg";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {

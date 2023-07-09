@@ -1,14 +1,16 @@
-export const navBarItems: Array<{ label: string; href: string }> = [
+import { IKeyLabelType } from "@/types/common/key-label.types";
+
+export const navBarItems: Array<IKeyLabelType<string, string>> = [
   {
     label: "About",
-    href: "/about",
+    key: "/about",
   },
   {
     label: "Articles",
-    href: "/articles",
+    key: "/articles",
   },
   {
     label: "Projects",
-    href: "/projects",
+    key: "/projects",
   },
 ];

@@ -4,6 +4,8 @@ import FlutterLogo from "@/Images/flutter.png";
 import CsharpLogo from "@/Images/Csharp.png";
 
 import Image from "next/image";
+import Link from "next/link";
+import { programmingLanguagesUrls } from "@/constants/social-media/social-media.constants";
 
 export interface IProgramingLanguageImageProps {
   alt: string;
@@ -17,8 +19,8 @@ const TypescriptImageComponent: React.FC<IProgramingLanguageImageProps> = ({
   className = "",
   height,
   width,
-}) => {
-  return (
+}) => (
+  <Link href={programmingLanguagesUrls.typescript}>
     <Image
       src={TypescriptLogo}
       alt=""
@@ -26,8 +28,8 @@ const TypescriptImageComponent: React.FC<IProgramingLanguageImageProps> = ({
       height={height}
       className={className}
     />
-  );
-};
+  </Link>
+);
 
 const NodeJSImageComponent: React.FC<IProgramingLanguageImageProps> = ({
   alt = "",
@@ -36,13 +38,15 @@ const NodeJSImageComponent: React.FC<IProgramingLanguageImageProps> = ({
   width,
 }) => {
   return (
-    <Image
-      src={NodeJSLogo}
-      alt=""
-      width={width}
-      height={height}
-      className={className}
-    />
+    <Link href={programmingLanguagesUrls.nodejs}>
+      <Image
+        src={NodeJSLogo}
+        alt=""
+        width={width}
+        height={height}
+        className={className}
+      />
+    </Link>
   );
 };
 
@@ -53,13 +57,15 @@ const FlutterImageComponent: React.FC<IProgramingLanguageImageProps> = ({
   width,
 }) => {
   return (
-    <Image
-      src={FlutterLogo}
-      alt=""
-      width={width}
-      height={height}
-      className={className}
-    />
+    <Link href={programmingLanguagesUrls.flutter}>
+      <Image
+        src={FlutterLogo}
+        alt=""
+        width={width}
+        height={height}
+        className={className}
+      />
+    </Link>
   );
 };
 
@@ -70,13 +76,15 @@ const CSharpImageComponent: React.FC<IProgramingLanguageImageProps> = ({
   width,
 }) => {
   return (
-    <Image
-      src={CsharpLogo}
-      alt=""
-      width={width}
-      height={height}
-      className={className}
-    />
+    <Link href={programmingLanguagesUrls.csharp}>
+      <Image
+        src={CsharpLogo}
+        alt=""
+        width={width}
+        height={height}
+        className={className}
+      />
+    </Link>
   );
 };
 

@@ -20,3 +20,10 @@ export const socialMediaPortals: Array<IKeyLabelType<string, FC<{}>>> = [
     label: Instagram,
   },
 ];
+
+export const programmingLanguagesUrls = {
+  typescript: "https://www.typescriptlang.org/",
+  nodejs: "https://nodejs.org/en",
+  flutter: "https://flutter.dev/",
+  csharp: "https://dotnet.microsoft.com/en-us/",
+};

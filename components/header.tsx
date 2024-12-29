@@ -84,7 +84,7 @@ const HeaderComponent: React.FC = (params) => {
                       <HeaderLogo large={false} />
                     </div>
                     <div className="flex flex-1 justify-center md:justify-center">
-                      <nav className="pointer-events-auto hidden md:block">
+                      {/* <nav className="pointer-events-auto hidden md:block">
                         <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
                           {navBarItems.map((item, index) => (
                             <Link
@@ -96,9 +96,9 @@ const HeaderComponent: React.FC = (params) => {
                             </Link>
                           ))}
                         </ul>
-                      </nav>
+                      </nav> */}
                     </div>
-                    <Popover className="pointer-events-auto md:hidden">
+                    {/* <Popover className="pointer-events-auto md:hidden">
                       <Popover.Button className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-0 dark:hover:ring-white/20">
                         Menu
                         <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
@@ -151,7 +151,7 @@ const HeaderComponent: React.FC = (params) => {
                           </Popover.Panel>
                         </Transition.Child>
                       </Transition.Root>
-                    </Popover>
+                    </Popover> */}
                   </div>
                 </div>
               </div>

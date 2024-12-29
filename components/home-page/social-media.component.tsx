@@ -10,6 +10,7 @@ const SocialMediaCOmponent: React.FC = () => {
             <Link
               key={media.key + index}
               href={media.key}
+              target="_blank"
               className="group -m-1 p-1"
             >
               <media.label />

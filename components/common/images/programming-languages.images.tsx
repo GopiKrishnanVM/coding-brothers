@@ -1,6 +1,6 @@
 import TypescriptLogo from "@/Images/typescript.png";
 import NodeJSLogo from "@/Images/node-js.png";
-import FlutterLogo from "@/Images/flutter.png";
+import AWSLogo from "@/Images/aws.png";
 import CsharpLogo from "@/Images/Csharp.png";
 
 import Image from "next/image";
@@ -15,7 +15,6 @@ export interface IProgramingLanguageImageProps {
 }
 
 const TypescriptImageComponent: React.FC<IProgramingLanguageImageProps> = ({
-  alt = "",
   className = "",
   height,
   width,
@@ -23,7 +22,7 @@ const TypescriptImageComponent: React.FC<IProgramingLanguageImageProps> = ({
   <Link href={programmingLanguagesUrls.typescript}>
     <Image
       src={TypescriptLogo}
-      alt=""
+      alt={programmingLanguagesUrls.typescript}
       width={width}
       height={height}
       className={className}
@@ -32,7 +31,6 @@ const TypescriptImageComponent: React.FC<IProgramingLanguageImageProps> = ({
 );
 
 const NodeJSImageComponent: React.FC<IProgramingLanguageImageProps> = ({
-  alt = "",
   className = "",
   height,
   width,
@@ -41,7 +39,7 @@ const NodeJSImageComponent: React.FC<IProgramingLanguageImageProps> = ({
     <Link href={programmingLanguagesUrls.nodejs}>
       <Image
         src={NodeJSLogo}
-        alt=""
+        alt={programmingLanguagesUrls.nodejs}
         width={width}
         height={height}
         className={className}
@@ -50,17 +48,16 @@ const NodeJSImageComponent: React.FC<IProgramingLanguageImageProps> = ({
   );
 };
 
-const FlutterImageComponent: React.FC<IProgramingLanguageImageProps> = ({
-  alt = "",
+const AWSImageComponent: React.FC<IProgramingLanguageImageProps> = ({
   className = "",
   height,
   width,
 }) => {
   return (
-    <Link href={programmingLanguagesUrls.flutter}>
+    <Link href={programmingLanguagesUrls.aws}>
       <Image
-        src={FlutterLogo}
-        alt=""
+        src={AWSLogo}
+        alt={programmingLanguagesUrls.aws}
         width={width}
         height={height}
         className={className}
@@ -70,7 +67,6 @@ const FlutterImageComponent: React.FC<IProgramingLanguageImageProps> = ({
 };
 
 const CSharpImageComponent: React.FC<IProgramingLanguageImageProps> = ({
-  alt = "",
   className = "",
   height,
   width,
@@ -79,7 +75,7 @@ const CSharpImageComponent: React.FC<IProgramingLanguageImageProps> = ({
     <Link href={programmingLanguagesUrls.csharp}>
       <Image
         src={CsharpLogo}
-        alt=""
+        alt={programmingLanguagesUrls.csharp}
         width={width}
         height={height}
         className={className}
@@ -91,7 +87,7 @@ const CSharpImageComponent: React.FC<IProgramingLanguageImageProps> = ({
 const programingLanguageImages = {
   Typescript: TypescriptImageComponent,
   NodeJS: NodeJSImageComponent,
-  Flutter: FlutterImageComponent,
+  AWS: AWSImageComponent,
   CSharp: CSharpImageComponent,
 };
 

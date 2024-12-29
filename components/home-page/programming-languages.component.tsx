@@ -2,7 +2,7 @@ import programingLanguageImages from "../common/images/programming-languages.ima
 
 const ProgrammingLanguagesComponent: React.FC = () => {
   return (
-    <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+    <div className="-my-4 flex justify-center gap-5 overflow-auto py-4 sm:gap-8">
       <div className="relative aspect-square w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
         <programingLanguageImages.Typescript
           alt="https://www.typescriptlang.org/"
@@ -19,8 +19,8 @@ const ProgrammingLanguagesComponent: React.FC = () => {
           className="absolute inset-0 h-full w-full object-contain"
         />
       </div>
-      <div className="relative aspect-square w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
-        <programingLanguageImages.Flutter
+      <div className="relative aspect-square w-44 flex-none overflow-hidden rounded-xl bg-zinc-100  sm:w-72 sm:rounded-2xl rotate-2">
+        <programingLanguageImages.AWS
           alt="https://flutter.dev/"
           width={3744}
           height={5616}

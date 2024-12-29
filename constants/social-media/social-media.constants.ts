@@ -4,26 +4,22 @@ import { FC, SVGProps } from "react";
 const { Github, Instagram, Linkedin, Twitter } = socialMediaImagesComponent;
 export const socialMediaPortals: Array<IKeyLabelType<string, FC<{}>>> = [
   {
-    key: "https://twitter.com",
-    label: Twitter,
-  },
-  {
-    key: "https://github.com",
+    key: "https://github.com/GopiKrishnanVM",
     label: Github,
   },
   {
-    key: "https://linkedin.com",
+    key: "https://www.linkedin.com/in/gopi-krishnan-vm-511492194",
     label: Linkedin,
   },
-  {
-    key: "https://instagram.com",
-    label: Instagram,
-  },
+  // {
+  //   key: "https://instagram.com",
+  //   label: Instagram,
+  // },
 ];
 
 export const programmingLanguagesUrls = {
   typescript: "https://www.typescriptlang.org/",
   nodejs: "https://nodejs.org/en",
-  flutter: "https://flutter.dev/",
+  aws: "https://aws.amazon.com/",
   csharp: "https://dotnet.microsoft.com/en-us/",
 };
